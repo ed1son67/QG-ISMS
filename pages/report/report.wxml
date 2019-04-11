@@ -1,0 +1,48 @@
+<view class='container'>
+ <view class='header'>
+  <view class='date-container'>
+    <view>4月10日</view>
+  </view>
+  <text>睡眠报告</text>
+ </view>
+ <view class='main-container'>
+  <view class='mark item-container'>
+    <view class='item-title'>总体评分</view>
+    <view class='mark-container'>
+      <view class='item'>
+        <view class='item-data'>
+        7.2
+        </view>
+        <text>睡眠环境评分</text>
+      </view>
+      <view class='item'>
+        <view class='item-data'>
+        7.2
+        </view>
+        <text>睡眠时间评分</text>
+      </view>
+      <view class='item'>
+        <view class='item-data'>
+        7.2
+        </view>
+        <text>睡眠质量评分</text>
+      </view>
+    </view>
+  </view>
+  <view class='data item-container'>
+    <view class='item-title'>数据总览</view>
+    <view class='data-item-container'>
+      <view class='item' wx:for="{{detailData}}" wx:key="{{index}}">
+        <view class='item-data'>
+        {{item.data}}
+        </view>
+        <text>{{item.title}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='chart item-container'>
+    <view class='item-title'>图表</view>
+    
+  </view>
+ </view> 
+</view>

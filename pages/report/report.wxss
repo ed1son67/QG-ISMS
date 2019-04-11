@@ -1,0 +1,60 @@
+/* pages/report/report.wxss */
+
+
+.header {
+  height: 160rpx;
+  line-height: 2em;
+  padding: 8px 32px 8px 20px;
+  background-color: #fff;
+}
+
+.date-container {
+  color: rgb(45, 170, 203);
+  font-size: 60rpx;
+}
+
+.main-container {
+  margin: 0 20px;
+}
+.item-container {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+  margin: 16px 0;
+}
+.item-container text {
+  font-size: 24rpx;
+}
+.item-title {
+  text-align: center;
+  padding: 8px 0;
+  font-size: 32rpx;
+}
+.mark-container {
+   display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-rows: 33.33% 33.33% 33.33%;
+
+}
+.data-item-container {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-rows: 33.33% 33.33% 33.33%;
+  width: auto;
+  padding: 0 10rpx;
+  padding-bottom: 16rpx;
+
+}
+.data-item-container .item {
+  
+}
+.item {
+  
+  text-align: center;
+  padding: 8px 0;
+}
+.item-data {
+  text-align: center;
+  color: rgb(45, 170, 203); 
+  line-height: 32px;
+}

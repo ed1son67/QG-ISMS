@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='header'>
+    <view>欢迎使用</view>
+    <view id='title'>智能睡眠监护枕头</view>
+  </view>
+  <view class='main-container'>
+    <view class='item' data-index='0' bindtap='switchPage'>
+      <view class='icon-container'>
+        <image style='height: 32px; width: 26px' class='icon' src='../../static/images/icon/icon_report.png'></image>
+      </view>
+      <text>睡眠报告</text>
+    </view>
+    <view class='item' data-index='1' bindtap='switchPage'>
+      <view class='icon-container'>
+        <image style='height: 26px; width: 38px;' class='icon' src='../../static/images/icon/icon_advice.png'></image>        
+      </view>
+      <text>睡眠建议</text>
+    </view>
+    <view class='item' data-index='2' bindtap='switchPage'>
+      <view class='icon-container'>
+        <image style='height: 34px; width: 34px;' class='icon' src='../../static/images/icon/icon_personal.png'></image>
+      </view>
+      <text>个人中心</text>
+    </view>
+  </view>
+  <view class='footer-container'>
+    <image  src='../../static/images/bg.png'></image>
+  </view>
+</view>

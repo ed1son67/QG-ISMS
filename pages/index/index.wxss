@@ -1,0 +1,54 @@
+/**index.wxss**/
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: space-between;
+}
+.header {
+  
+  margin: 48rpx 64rpx 96rpx 64rpx;
+  line-height: 68rpx;
+  color: rgb(112, 112, 112);
+  font-weight: lighter;
+  /* font-size: 20px; */
+}
+#title {
+  color: rgb(45, 170, 203);
+  font-weight: normal;
+}
+
+/* 每一个功能项 */
+.main-container {
+  margin: 0 64rpx;
+}
+.item {
+  
+  background-color: #fff;
+  margin-bottom: 40rpx;
+  display: flex;
+  justify-content: center;
+  color: rgb(112, 112, 112);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+  border-radius: 5px;
+  align-items: center;
+  height: 130rpx;
+}
+.icon-container {
+  width: 50px;
+  text-align: center;
+  padding-right: 50px;
+}
+.icon {
+  vertical-align: middle;
+  /* margin-right: 50px; */
+}
+.footer-container {
+  height: 200px;
+  overflow: hidden;
+}
+.footer-container image {
+  width: 488px;
+  height: 356px;
+}
