@@ -1,11 +1,9 @@
 /* pages/report/report.wxss */
 
 
-.header {
-  height: 160rpx;
-  line-height: 2em;
-  padding: 8px 32px 8px 20px;
-  background-color: #fff;
+
+.date-title {
+  padding: 14rpx 0;
 }
 
 .date-container {
@@ -14,22 +12,11 @@
 }
 
 .main-container {
-  margin: 0 20px;
+  margin: 0 40rpx;
+  margin-top: 240rpx;
 }
-.item-container {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
-  margin: 16px 0;
-}
-.item-container text {
-  font-size: 24rpx;
-}
-.item-title {
-  text-align: center;
-  padding: 8px 0;
-  font-size: 32rpx;
-}
+
+
 .mark-container {
    display: grid;
   grid-template-columns: 33.33% 33.33% 33.33%;
@@ -51,10 +38,35 @@
 .item {
   
   text-align: center;
-  padding: 8px 0;
+  padding: 16rpx 0;
 }
 .item-data {
   text-align: center;
   color: rgb(45, 170, 203); 
-  line-height: 32px;
+  line-height: 48rpx;
+}
+
+
+/* 每一个图表的css */
+.chart-container {
+  
+}
+.chart {
+  height: 360rpx;
+  width: 100%;
+  z-index: 0;
+  margin-top: 20rpx;
+}
+.chart-title {
+  text-align: center;
+  font-size: 24rpx;
+}
+
+/* 日期选择器 */
+.picker-container {
+ display: inline-block;
+}
+.year {
+  font-size: 30rpx;
+  /* color: #959595; */
 }

@@ -1,9 +1,16 @@
 <view class='container'>
- <view class='header'>
-  <view class='date-container'>
-    <view>4月10日</view>
+ <view class='common-header'>
+  <view class='inner-header'>
+    <view class='date-container'>
+      {{displayDate}}
+      
+      <picker class='picker-container' mode="date" value="{{nowDate}}" start="2015-09-01" end="{{endDate}}" bindchange="bindDateChange">
+        <image style='width: 48rpx;height: 44rpx;' src='../../static/images/icon/icon_time.png'></image>
+      </picker>
+      <view class='year'>{{nowYear}}</view>
+    </view>
+    <view class='date-title'>睡眠报告</view>
   </view>
-  <text>睡眠报告</text>
  </view>
  <view class='main-container'>
   <view class='mark item-container'>
@@ -29,7 +36,7 @@
       </view>
     </view>
   </view>
-  <view class='data item-container'>
+  <view class='item-container'>
     <view class='item-title'>数据总览</view>
     <view class='data-item-container'>
       <view class='item' wx:for="{{detailData}}" wx:key="{{index}}">
@@ -40,9 +47,56 @@
       </view>
     </view>
   </view>
-  <view class='chart item-container'>
+  <view class='item-container'>
     <view class='item-title'>图表</view>
-    
+    <view class='chart-container'>
+      <view class='chart-title'>心率波形图</view>
+      <view class='chart'>
+        <ec-canvas canvas-id="heartRateChart" ec="{{ heartRateChart }}"></ec-canvas>
+      </view>
+      <view class='data-item-container'>
+        <view class='item' wx:for="{{heartRateData}}" wx:key="{{index}}">
+          <view class='item-data'>{{item.data}}</view>
+          <text>{{item.title}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='chart-container'>
+      <view class='chart-title'>呼吸速率波形图</view>
+      <view class='chart'>
+        <ec-canvas canvas-id="breathRateChart" ec="{{ breathRateChart }}"></ec-canvas>
+      </view>
+      <view class='data-item-container'>
+        <view class='item' wx:for="{{breathRateData}}" wx:key="{{index}}">
+          <view class='item-data'>{{item.data}}</view>
+          <text>{{item.title}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='chart-container'>
+      <view class='chart-title'>环境噪音波形图</view>
+      <view class='chart'>
+        <ec-canvas canvas-id="noiseChart" ec="{{ noiseChart }}"></ec-canvas>
+      </view>
+      <view class='data-item-container'>
+        <view class='item' wx:for="{{noiseData}}" wx:key="{{index}}">
+          <view class='item-data'>{{item.data}}</view>
+          <text>{{item.title}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='chart-container'>
+      <view class='chart-title'>体动按时间分布图</view>
+      <view class='chart'>
+        <ec-canvas canvas-id="movingChart" ec="{{ movingChart }}"></ec-canvas>
+      </view>
+      <view class='data-item-container'>
+        <view class='item'>
+          <view class='item-data'>{{movingData}}</view>
+          <text>体动总次数</text>
+        </view>
+      </view>
+    </view>
   </view>
  </view> 
 </view>

@@ -1,1 +1,22 @@
 /* pages/center/center.wxss */
+.main-container {
+  margin: 0 40rpx;
+  margin-top: 160rpx;
+}
+.item-container {
+  padding-bottom: 12rpx;
+}
+.item {
+  display: flex;
+  align-items: center;
+  margin: 0 70rpx;
+  height: 82rpx;
+}
+.label {
+  font-size: 24rpx;
+  text-align: left; 
+}
+.value {
+  color: rgb(45, 170, 203);
+  flex: 1;
+}

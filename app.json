@@ -1,8 +1,11 @@
 {
   "pages": [
     "pages/report/report",
+    
     "pages/index/index",
+    
     "pages/center/center",
+    
     "pages/suggestion/suggestion"
   ],
   "window": {
