@@ -5,7 +5,49 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    sleepStatus: [
+      {
+        label: '状态标签:',
+        value: '晚睡 乖宝宝'
+      }, {
+        label: '睡眠平均分:',
+        value: '78分'
+      }, {
+        label: '心脏总能量:',
+        value: '4800'
+      }, {
+        label: '平均时长:',
+        value: '12'
+      }
+    ],
+    formData: [
+      {
+        label: '姓名:',
+        value: '锋哥'
+      }, {
+        label: '性别:',
+        value: '男'
+      }, {
+        label: '身高:',
+        value: '1.80m'
+      }, {
+        label: '体重',
+        value:''
+      }, {
+        label: '生日:',
+        value: ''
+      }
+    ],
+    deviceStatus: [
+      {
+        label: 'WIFI连接状态:',
+        value: 'GDUT'
+      }, {
+        label: '蓝牙连接状态:',
+        value: '未连接'
+      }
+    ]
+   
   },
 
   /**
