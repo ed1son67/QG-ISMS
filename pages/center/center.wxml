@@ -1,2 +1,31 @@
-<!--pages/center/center.wxml-->
-<text>pages/center/center.wxml</text>
+<view class='container'>
+  <view class='common-header'>
+    <view class='inner-header second-header'>个人中心</view>
+ </view>
+  <view class='main-container'>
+    <view class='item-container'>
+      <view class='item-title'>个人信息</view>
+        <view class="item" wx:for="{{formData}}" wx:key="{{index}}">
+          <view class="label" style='width: 100rpx;'>{{item.label}}</view>
+          <view class='value'>
+            <input name="input" value="{{item.value}}" placeholder=""/>
+          </view>
+          <image style='height: 32rpx;width: 32rpx;' src='../../static/images/icon/icon_edit.png'></image>
+        </view>
+    </view>
+    <view class='item-container'>
+      <view class='item-title'>睡眠状态</view>
+      <view class="item" wx:for="{{sleepStatus}}" wx:key="{{index}}">
+        <view class="label" style='width: 190rpx;'>{{item.label}}</view>
+        <view class='value'>{{item.value}}</view>
+      </view>
+    </view>
+    <view class='item-container'>
+      <view class='item-title'>设备状态</view>
+      <view class="item" wx:for="{{deviceStatus}}" wx:key="{{index}}">
+        <view class="label" style='width: 190rpx;'>{{item.label}}</view>
+        <view class='value'>{{item.value}}</view>
+      </view>
+    </view>
+  </view>
+</view>

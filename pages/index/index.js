@@ -15,7 +15,16 @@ Page({
     })
   },
   onLoad: function () {
-    
+    // wx.login({
+    //   success: () => {
+    //     console.log(123)
+    //   }
+    // })
+    wx.getUserInfo({
+      success: (res) => {
+        console.log(res.userInfo)
+      }
+    })  
   },
- 
+
 })

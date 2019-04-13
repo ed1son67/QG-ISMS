@@ -2,8 +2,39 @@
 page {
   font-family: 'Source Han Sans CN';
   font-size: 40rpx;
-  /* background-color: rgb(252, 252, 252); */
   background-color: #f7f7f7;
   color: rgb(112, 112, 112);
-
+}
+.container {
+  position: relative;
+}
+.common-header {
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.inner-header {
+  margin: 0 40rpx;
+}
+.second-header {
+  padding: 30rpx 0;
+}
+.item-container {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+  margin: 32rpx 0;
+}
+.item-container text {
+  font-size: 24rpx;
+}
+.item-title {
+  text-align: center;
+  padding: 8px 0;
+  font-size: 32rpx;
 }
