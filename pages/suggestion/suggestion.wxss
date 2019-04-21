@@ -1,1 +1,62 @@
 /* pages/suggestion/suggestion.wxss */
+
+.main-container {
+  margin-top: 120rpx;
+  display: flex;
+  justify-content: center;
+}
+.card-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 20rpx;
+}
+.card {
+  margin: 10rpx;
+
+}
+.card image {
+  width: 216rpx;
+  height: 288rpx;
+}
+
+.mask-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f7f7f7;
+  z-index: 9999;
+
+}
+.mask-header-container {
+  text-align: left;
+  padding: 10rpx;
+  background-color: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+
+}
+.close-container {
+  height: 30rpx;
+  width: 30rpx;
+  padding: 0 30rpx;
+}
+.close-container image {
+  height: 30rpx;
+  width: 30rpx;
+}
+.mask-header {
+  margin: 0 50rpx;
+  padding: 40rpx 0 20rpx 0;
+}
+.mask {
+  width: 648rpx;
+  height: 864rpx;
+  margin: 40rpx auto 0 auto;
+}
+.mask image {
+  width: 648rpx;
+  height: 864rpx;
+   
+}

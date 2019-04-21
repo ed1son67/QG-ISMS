@@ -1,16 +1,17 @@
 {
   "pages": [
-    "pages/report/report",
-    
     "pages/index/index",
     
-    "pages/center/center",
+    "pages/suggestion/suggestion",
     
-    "pages/suggestion/suggestion"
+    
+    "pages/report/report",
+    
+    "pages/center/center"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#f7f7f7",
     "navigationBarTitleText": "智能睡眠监护系统",
     "navigationBarTextStyle": "black"
   }

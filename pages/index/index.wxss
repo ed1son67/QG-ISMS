@@ -38,7 +38,7 @@
 .icon-container {
   width: 50px;
   text-align: center;
-  padding-right: 50px;
+  padding-right: 40px;
 }
 .icon {
   vertical-align: middle;

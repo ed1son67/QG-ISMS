@@ -8,7 +8,7 @@ Page({
     sleepStatus: [
       {
         label: '状态标签:',
-        value: '晚睡 乖宝宝'
+        value: '晚睡 失眠 打鼻鼾'
       }, {
         label: '睡眠平均分:',
         value: '78分'
@@ -17,13 +17,13 @@ Page({
         value: '4800'
       }, {
         label: '平均时长:',
-        value: '12'
+        value: '7h5min'
       }
     ],
     formData: [
       {
         label: '姓名:',
-        value: '锋哥'
+        value: '刘基正'
       }, {
         label: '性别:',
         value: '男'
@@ -32,10 +32,10 @@ Page({
         value: '1.80m'
       }, {
         label: '体重',
-        value:''
+        value:'64kg'
       }, {
         label: '生日:',
-        value: ''
+        value: '1998-04-02'
       }
     ],
     deviceStatus: [

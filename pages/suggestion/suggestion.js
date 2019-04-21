@@ -5,9 +5,35 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    maskTitle: '',
+    nowPath: '',
+    showMask: true,
+    cardData: [
+      {
+        src: '../../static/images/card.png'
+      }
+    ]
   },
+  showDetail: function(e)  {
+    let url = ['../../static/images/card_1_detail.png', '../../static/images/card_2_detail.png', '../../static/images/card_3_detail.png', '../../static/images/card_4_detail.png', '../../static/images/card_5_detail.png', '../../static/images/card_6_detail.png'];
 
+    let title = ['放松身体', '改善睡眠环境', '呼噜呼噜',  '让手机也放松一会儿', '深度睡眠', '早睡早起']
+    this.setData({
+      showMask: false,
+      nowPath: url[e.currentTarget.dataset.index],
+      maskTitle: title[e.currentTarget.dataset.index]
+    })
+    
+   
+  },
+  /**
+   * 关闭弹窗
+   */
+  closeMask: function() {
+    this.setData({
+      showMask: true
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

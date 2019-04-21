@@ -6,7 +6,7 @@
     <view class='item-container'>
       <view class='item-title'>个人信息</view>
         <view class="item" wx:for="{{formData}}" wx:key="{{index}}">
-          <view class="label" style='width: 100rpx;'>{{item.label}}</view>
+          <view class="label" style='width: 140rpx;'>{{item.label}}</view>
           <view class='value'>
             <input name="input" value="{{item.value}}" placeholder=""/>
           </view>
