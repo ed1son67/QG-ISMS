@@ -2,7 +2,7 @@
 <view class="container">
   <view class='header'>
     <view>欢迎使用</view>
-    <view id='title'>智能睡眠监护枕头</view>
+    <view id='title'>智能睡眠监护系统</view>
   </view>
   <view class='main-container'>
     <view class='item' data-index='0' bindtap='switchPage'>
@@ -22,6 +22,12 @@
         <image style='height: 34px; width: 34px;' class='icon' src='../../static/images/icon/icon_personal.png'></image>
       </view>
       <text>个人中心</text>
+    </view>
+     <view class='item' data-index='3' bindtap='switchPage'>
+      <view class='icon-container'>
+        <image style='height: 34px; width: 34px;' class='icon' src='../../static/images/icon/heartRate.png'></image>
+      </view>
+      <text>实时监控</text>
     </view>
   </view>
   <view class='footer-container'>

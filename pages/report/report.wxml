@@ -1,5 +1,5 @@
 <view class='container'>
-  <view class='common-header'>
+  <view class='common-header' style='position: relative;'>
     <view class='inner-header'>
       <view class='date-container'>
         {{displayDate}}
@@ -18,19 +18,19 @@
       <view class='mark-container'>
         <view class='item'>
           <view class='item-data'>
-            7.2
+            {{markData[0]}}
           </view>
           <text>睡眠环境评分</text>
         </view>
         <view class='item'>
           <view class='item-data'>
-            7.8
+            {{markData[1]}}
           </view>
           <text>睡眠时间评分</text>
         </view>
         <view class='item'>
           <view class='item-data'>
-            7.5
+            {{markData[2]}}
           </view>
           <text>睡眠质量评分</text>
         </view>
@@ -52,7 +52,7 @@
       <view class='chart-container'>
         <view class='chart-title'>心率波形图</view>
         <view class='chart'>
-          <ec-canvas canvas-id="heartRateChart" disable-scroll="true" ec="{{ heartRateChart }}"></ec-canvas>
+          <ec-canvas canvas-id="heartRateChart" disable-scroll="true" ec="{{ echeartRateChart }}"></ec-canvas>
         </view>
         <view class='data-item-container'>
           <view class='item' wx:for="{{heartRateData}}" wx:key="{{index}}">
@@ -64,7 +64,7 @@
       <view class='chart-container'>
         <view class='chart-title'>呼吸速率波形图</view>
         <view class='chart'>
-          <ec-canvas canvas-id="breathRateChart" ec="{{ breathRateChart }}"></ec-canvas>
+          <ec-canvas canvas-id="breathRateChart" ec="{{ ecbreathRateChart }}"></ec-canvas>
         </view>
         <view class='data-item-container'>
           <view class='item' wx:for="{{breathRateData}}" wx:key="{{index}}">
@@ -76,7 +76,7 @@
       <view class='chart-container'>
         <view class='chart-title'>环境噪音波形图</view>
         <view class='chart'>
-          <ec-canvas canvas-id="noiseChart" ec="{{ noiseChart }}"></ec-canvas>
+          <ec-canvas canvas-id="noiseChart" ec="{{ ecnoiseChart }}"></ec-canvas>
         </view>
         <view class='data-item-container'>
           <view class='item' wx:for="{{noiseData}}" wx:key="{{index}}">
@@ -88,7 +88,7 @@
        <view class='chart-container'>
         <view class='chart-title'>睡眠分期比例图</view>
         <view class='chart'>
-          <ec-canvas canvas-id="sleepChart" ec="{{ sleepChart }}"></ec-canvas>
+          <ec-canvas canvas-id="sleepChart" ec="{{ ecsleepChart }}"></ec-canvas>
         </view>
         <view class='data-item-container'>
           <view class='item' wx:for="{{sleepData}}" wx:key="{{index}}">
@@ -100,7 +100,7 @@
       <view class='chart-container'>
         <view class='chart-title'>体动按时间分布图</view>
         <view class='chart'>
-          <ec-canvas canvas-id="movingChart" ec="{{ movingChart }}"></ec-canvas>
+          <ec-canvas canvas-id="movingChart" ec="{{ ecmovingChart }}"></ec-canvas>
         </view>
         <view class='data-item-container'>
           <view class='item'>

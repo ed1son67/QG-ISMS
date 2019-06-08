@@ -1,0 +1,39 @@
+.header-container {
+  
+  margin: 40rpx;
+  
+}
+.header-container text {
+  color: #2daacb;
+}
+
+.cart-container {
+  display: flex;
+  text-align: center;
+  background-color: #fff;
+  padding: 30rpx 0;
+  font-size: 36rpx;
+  
+}
+.cart-container image {
+  height: 50rpx;
+  width: 50rpx;
+  vertical-align: top;
+  padding: 0 40rpx;
+}
+.title-container {
+  
+  /* margin-right: 70rpx; */
+}
+
+.data-container {
+  text-align: right;
+  flex: 1;
+  margin-right: 100rpx;
+}
+.data-container text {
+  
+  color: #2daacb;
+  
+}
+

@@ -1,9 +1,7 @@
-/* pages/report/report.wxss */
-
-
 
 .date-title {
   padding: 14rpx 0;
+  
 }
 
 .date-container {
@@ -13,7 +11,7 @@
 
 .main-container {
   margin: 0 40rpx;
-  margin-top: 240rpx;
+  /* margin-top: 240rpx; */
 }
 
 
