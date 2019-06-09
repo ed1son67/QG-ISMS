@@ -79,7 +79,7 @@ Page({
    
     wx.request({
       
-      url: 'https://www.ed1son.cn:11118/report/sleep?date=2019-06-08&id=1',
+      url: 'https://www.ed1son.cn:11118/report/sleep?date=2019-06-10&id=1',
       // url: 'https://www.ed1son.cn',
 
       method: 'get',

@@ -232,15 +232,16 @@ Page({
     wx.request({
       url: 'https://www.ed1son.cn:11118/report/sleepallnight?date=' + this.data.nowDate + '&id=1',
 
+
        // url: 'report/sleep',
       method: 'get',
       success: (res) => {
-        
         let report = res.data.data.report;
         
         let briefReport = res.data.data.briefReport;
+        console.log(report.deepPer)
 
-        console.log(briefReport)
+        
 
         this.setData({
           'detailData[0].data': report.deepPer + '%',
@@ -278,6 +279,8 @@ Page({
 
         })
 
+        
+
         let breathList = res.data.data.breathList;
         let envList = res.data.data.envList;
         let heartList = res.data.data.heartList;
@@ -301,23 +304,41 @@ Page({
             dataSet.push(data);
             
           }
+          console.log(dataSet);
           return dataSet;
         }
 
         
+        heartRateChart.clear();
+        breathRateChart.clear();
+        noiseChart.clear();
+        movingChart.clear();
+        sleepChart.clear();
+
+        
+        heartRateChart.setOption(getHeartRateOption());
+        breathRateChart.setOption(getBreathRateOption());
+        noiseChart.setOption(getNoiseOption());
+        movingChart.setOption(getMovingOption());
+        sleepChart.setOption(getSleepOption());
+        
+
         // 心率图
         heartRateChart.setOption({
-          series: [{
+          series: {
             data: setData(heartList, 'heartAvg'),
-          }]
-        })
+          }
+        });
+
 
         // 噪音图
         noiseChart.setOption({
           series: [{
             data: setData(envList, 'envAvg'),
           }]
+        
         })
+
         // 呼吸速率图
         breathRateChart.setOption({
           series: [{
@@ -395,7 +416,7 @@ function getHeartRateOption() {
         fontSize: 13,
       }
     },
-    series: [{
+    series: {
       symbol: 'none',
       name: 'chart',
       type: 'line',
@@ -507,7 +528,7 @@ function getHeartRateOption() {
         // ['08:00', 57]
       ],
 
-    }]
+    }
 
   }
 }
